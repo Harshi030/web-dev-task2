@@ -1,0 +1,350 @@
+body {
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thar {
+  width: 200px;
+}
+
+.mahindra {
+  width: 200px;
+  height: 150px;
+}
+
+.mainimg {
+  width: 100%;
+}
+
+.KW {
+  color: brown;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+
+.keyhighlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.keyhighlights img {
+  width: 600px;
+}
+
+.keyhighlights div {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+}
+
+.keyhighlights div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.keyhighlights div h1 {
+  color: #ced4da;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.keyhighlights div p {
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+iframe {
+  width: 500px;
+  height: 350px;
+}
+
+.model {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.model .LNE {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  gap: 20px;
+}
+
+.model .LNE h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.model .LNE p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.model .LNE div button {
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.model .LNE div .EN {
+  background-color: rgb(186, 180, 175);
+  border: none;
+}
+
+.model .LNE div .EN:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(25, 25, 25);
+  transition: all 0.2s;
+  color: whitesmoke;
+  border: 2px solid white;
+}
+
+.model .LNE div .TD {
+  background-color: rgb(25, 25, 25);
+  border: 2px solid white;
+  color: whitesmoke;
+}
+
+.model .LNE div .TD:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(186, 180, 175);
+  transition: all 0.2s;
+  color: black;
+  border: 2px solid black;
+}
+
+.model img {
+  width: 650px;
+}
+
+@media only screen and (max-width:1200px) {
+  .model {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+
+  .model .LNE {
+    margin-top: 50px;
+    width: 450px;
+    gap: 10px;
+  }
+
+  .model .LNE h1 {
+    font-size: 30px;
+  }
+
+  .model .LNE p {
+    font-size: 15px;
+  }
+
+  .model img {
+    width: 450px;
+    margin-bottom: -55px;
+  }
+
+  .model .LNE div button {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  nav {
+    height: 60px;
+  }
+
+  .thar {
+    width: 150px;
+  }
+
+  .mahindra {
+    width: 150px;
+    height: 100px;
+  }
+
+  .KW {
+    font-size: 30px;
+  }
+
+  .keyhighlights img {
+    width: 400px;
+  }
+
+  .keyhighlights div {
+    width: 400px;
+  }
+
+  .keyhighlights div h1 {
+    font-size: 25px;
+  }
+
+  .keyhighlights div p {
+    font-size: 15px;
+  }
+
+  iframe {
+    width: 350px;
+    height: 200px;
+  }
+
+  .model img {
+    margin-bottom: -70px;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  nav {
+    height: 40px;
+  }
+
+  .thar {
+    width: 120px;
+  }
+
+  .mahindra {
+    width: 120px;
+    height: 80px;
+  }
+
+  .keyhighlights img {
+    width: 350px;
+  }
+
+  .keyhighlights div {
+    width: 350px;
+  }
+
+  .keyhighlights div h1 {
+    font-size: 20px;
+  }
+
+  .keyhighlights div p {
+    font-size: 10px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 150px;
+  }
+
+  .model .LNE {
+    width: 350px;
+  }
+
+  .model .LNE h1 {
+    font-size: 25px;
+  }
+
+  .model .LNE p {
+    font-size: 10px;
+  }
+
+  .model img {
+    width: 400px;
+  }
+
+  .model .LNE div button {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .KW {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width:390px) {
+  nav {
+    height: 35px;
+  }
+
+  .thar {
+    width: 100px;
+  }
+
+  .mahindra {
+    width: 115px;
+    height: 65px;
+  }
+
+  .keyhighlights img {
+    width: 300px;
+  }
+
+  .keyhighlights div {
+    width: 300px;
+  }
+
+  .keyhighlights div h1 {
+    font-size: 15px;
+  }
+
+  .keyhighlights div p {
+    font-size: 8px;
+  }
+
+  iframe {
+    width: 250px;
+    height: 130px;
+  }
+
+  .model .LNE {
+    width: 300px;
+  }
+
+  .model .LNE h1 {
+    font-size: 20px;
+  }
+
+  .model .LNE p {
+    font-size: 10px;
+  }
+
+  .model img {
+    width: 300px;
+    margin-bottom: -75px;
+  }
+
+  .model .LNE div button {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .KW {
+    font-size: 20px;
+  }
+}
